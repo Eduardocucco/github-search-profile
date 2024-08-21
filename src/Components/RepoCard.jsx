@@ -3,14 +3,10 @@ const RepoCard = ({ liveDemo, name, description, topics, htmlUrl, language, }) =
 
   return (
     <>
-      {/* <!-- Card 1 --> */}
       <div className={`transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 ${language === "JavaScript" ? "bg-yellow-500" : language === "SCSS" ? "bg-purple-600" : language === "HTML" ? "bg-red-600" : language === "CSS" ? "bg-pink-500" : language === "Vue" ? "bg-green-500" : language === "Ruby" ? "bg-red-900" : language === "Python" ? "bg-yellow-400" : language === "Java" ? "bg-orange-900" : language === "Shell" ? "bg-green-500" : "bg-blue-500"} text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0`}>
 
-        {/* <!-- Dot Follwing the Left Vertical Line --> */}
         <div className={`w-5 h-5 bg-white absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0`} />
-        {/* <!-- Line that connecting the box with the vertical line --> */}
         <div className={`w-10 h-1 bg-white  absolute -left-10 z-0`} />
-        {/* <!-- Content that showing in the box --> */}
         <div className="flex-auto">
           <h1 className="text-xl font-bold">
             {name}

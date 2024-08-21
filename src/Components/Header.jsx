@@ -7,13 +7,11 @@ import ThemeContext from "../Context/ThemeContext";
 const Header = () => {
   const { theme, setTheme } = useContext(ThemeContext);
 
-  //! Mobile Menu Functions
   const mobileMenu = () => { document.querySelector('#mobile-menu').classList.toggle('hidden') }
   const mobileMenuClose = () => { document.querySelector('#mobile-menu').classList.add('hidden') }
 
   return (
     <header className={`flex justify-between ${theme === "dark" ? "bg-slate-800" : "bg-black"} items-center p-5 px-4 md:px-40`}>
-      {/* Logo */}
       <div className="logo text-2xl flex items-center">
         <Link to={"/"}>
           <BsGithub className="text-2xl md:text-3xl" />
